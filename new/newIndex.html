@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="html kodu önizleme aracı" />
+    <meta name="keywords" content="preview, izle ,ön, html, code, havaylar, tester,havaylar.com" />
+    <meta name="author" content="Havaylar" />
+	<title>HTML Tester</title>
+	<link rel="stylesheet" href="newstyle.css" type="text/css" media="screen">
+	<script type="text/javascript" src="button.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="content">
+			<header class="col-12">
+				<div>
+					<span><h1>HTML Tester</span>
+				</div>
+				<div>
+					<p></p>
+				</div>
+			</header>
+			<article>
+				<div class="col-12 main">
+					<div class="col-6 col-m-6 left">
+						<form name="form1" method="post">
+							<textarea name="code" wrap="soft" placeholder="Kodları buraya yapıştırın." onclick="focus(this.code)"></textarea>
+						</form>
+					</div>
+					<div class="col-6 col-m-6 right">
+						<iframe src="about:blank" name="preview" frameborder="0">
+							<!-- önizleme src="about:blank"-->
+						</iframe>
+					</div>
+				</div>
+				<div class="col-12 col-m-12 submain">
+					<div class="col-3">
+						<button class="btn" onclick="previewHTML()" type="button">Önizle</button>
+					</div>
+					<div class="col-3">
+						<button class="btn" onclick="clearIframe()" type="button">Temizle</button>
+					</div>
+					<div class="col-3">
+						<button class="btn" onclick="openNewWindow()" type="button">Yeni Pencerede Aç</button>
+					</div>
+					<div class="col-3">
+						<button class="btn" onclick="location.reload()" type="button">Yenile</button>
+					</div>
+					<!-- alt taraf -->
+				</div>
+			</article>
+			<footer>
+				<br><br><br>
+				<a href="https://www.facebook.com/eray.havaylar" target="_blank" class="fa fa-facebook-official"></a>
+				<a href="https://www.instagram.com/erayhavaylar/" class="fa fa-instagram" target="_blank"></a>
+				<a href="https://plus.google.com/u/1/102608789300277133202" class="fa fa-google" target="_blank"></a>
+				<a href="https://www.linkedin.com/in/eray-havaylar-8b283b10b?trk=nav_responsive_tab_profile" class="fa fa-linkedin" target="_blank"></a>
+				<a href="https://www.youtube.com/channel/UC87iwOcK2V42mkfoQaRNs1w" class="fa fa-youtube" target="_blank"></a>
+				<a href="https://github.com/thehavays" class="fa fa-github" target="_blank"></a>
+				<a href="http://steamcommunity.com/profiles/76561198074172280/" class="fa fa-steam-square" target="_blank"></a><br><br>
+				
+				Powered by <a href="http://www.havaylar.com/">Havaylar</a><sup>©</sup>
+			</footer>
+		</div>
+	</div>
+</body>
+
+</html>

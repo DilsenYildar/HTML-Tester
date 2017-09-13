@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+    <title>HTML Tester</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="html kodu önizleme aracı" />
+    <meta name="keywords" content="preview, izle ,ön, html, code, havaylar, tester,havaylar.com" />
+    <meta name="author" content="Havaylar" />
+</head>
+
+
+<body bgcolor="#003333">
+
+    <div style="float:left;height:80%;width:50%;background:white;">
+        <!-- sol taraf -->
+
+        <form style="height:100%;width:100%;background:white;" name="form1" method="post">
+            <textarea name="code" wrap="soft" onclick="focus(this.code)" style="resize: none">Kodları Buraya Yapıştırın</textarea>
+        </form>
+    </div>
+
+    <div style="float:right;height:80%;width:50%;background:white;">
+        <!-- sağ taraf -->
+
+        <iframe src="about:blank" name="preview" style="border: 0; width: 100%; height: 100%; margin:0; solid #b9b8b6;" frameborder="0">
+            <!-- önizleme -->
+        </iframe>
+
+    </div>
+
+    <div align="center" style="height:100%;width:100%;">
+        <button onclick="preview.document.write (document.getElementsByTagName ('TEXTAREA')[0].value); preview.document.close(); preview.focus()"
+            type="button" class="btn">Önizle</button>
+
+        <button onclick="window.document.form1.code.value='';preview.document.write (document.getElementsByTagName ('TEXTAREA')[0].value); preview.document.close(); preview.focus()"
+            type="button" class="btn">Temizle</button>
+
+        <button onclick="javascript: win=window.open('', '', 'toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=780,height=550'); win.document.write(window.document.form1.code.value); return false;"
+            type="button" class="btn">Yeni Pencerede Aç</button>
+
+        <button onclick="location.reload()" type="button" class="btn">Yenile</button>
+        <!-- alt taraf -->
+    </div>
+
+</body>
+
+</html>

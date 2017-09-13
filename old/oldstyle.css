@@ -1,0 +1,45 @@
+html, body {
+  height: 100%;
+	margin:0px;
+	font-size:100%;
+}
+
+textarea {
+  width: 100%;
+  margin:0px;
+	height: 100%;
+}
+
+.btn {
+  background: #47494f;
+  background-image: -webkit-linear-gradient(top, #47494f, #47494f);
+  background-image: -moz-linear-gradient(top, #47494f, #47494f);
+  background-image: -ms-linear-gradient(top, #47494f, #47494f);
+  background-image: -o-linear-gradient(top, #47494f, #47494f);
+  background-image: linear-gradient(to bottom, #47494f, #47494f);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #232427;
+  background-image: -webkit-linear-gradient(top, #232427, #232427);
+  background-image: -moz-linear-gradient(top, #232427, #232427);
+  background-image: -ms-linear-gradient(top, #232427, #232427);
+  background-image: -o-linear-gradient(top, #232427, #232427);
+  background-image: linear-gradient(to bottom, #232427, #232427);
+  text-decoration: none;
+}
+
+@media only screen and (min-width:768px) { 
+  
+}
+@media only screen and (max-width: 767px) {
+  
+}
